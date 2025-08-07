@@ -12,8 +12,88 @@
 <!-- icon setup environment -->
  <script src="https://kit.fontawesome.com/4f098a7aba.js" crossorigin="anonymous"></script>
 <!-- tailwind setup environment -->
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <style>
+  
+.manrope{
+  font-family: "Manrope", sans-serif;
+}
+ </style>
 </head>
-<body>
+<body class="max-w-[1600px] w-full mx-auto manrope">
+    <!-- header section -->
+  <header class=" max-w-6xl mx-auto lg:flex ">
+    <!-- text part -->
+   <div class="pl-4">
+    <h1 class="text-7xl md:text-6xl lg:text-7xl py-4 font-medium" >It's good<br>tea time at The <br>Tea House</h1>
+    <p class="text-lg lg:text-lg md:text-base text-gray-700 w-3/4 pb-3 ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+    <button class="bg-gradient-to-r from-orange-500 to-red-700 px-4 py-3 text-white text-xl rounded-xl ">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+   </div>
+   <!-- image part -->
+    <div class="relative">
+        <div><img src="./images/banner.png" alt=""></div>
+        <!-- cart -->
+    <div class="flex gap-3items-center shadow-lg px-5 py-3 rounded-xl absolute bottom-1 left-15  lg:bottom-1 lg:left-10 md:bottom-7 bg-white">
+        <!-- icon -->
+        <div class="text-4xl text-amber-400"><i class="fa-solid fa-star"></i></div>
+        <!-- text -->
+        <div>
+            <h1 class="text-2xl font-bold">5.00</h1>
+            <p class="text-gray-600">Trust Pilot Rating</p>
+        </div>
+    </div>
     
+    </div>
+
+  </header> 
+  <main>
+    <!-- featured products section -->
+    <section>
+      <div class="text-center mt-9 lg:mt-24 pb-8">
+        <h1 class="text-5xl font-bold py-5">Our Featured Products</h1>
+        <p class="max-w-2xl mx-auto text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+      </div>
+      <!-- prodeuct card -->
+
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 justify-center">
+        <!-- tea-1 -->
+       <div class="rounded-lg shadow-lg bg-gray-50 mx-auto">
+       <div>
+        <img class="p-5 pl-11 mx-auto " src="./images/tea-1.png" alt="">
+       </div>
+       <div class="text-center">  
+        <h1 class="text-2xl font-bold pb-2">Milk Tea</h1>
+        <p class="text-gray-600 px-4">Creamer could be replaced <br> by fresh milk</p>
+       </div></div>
+        <!-- tea-2-->
+       <div class="rounded-lg shadow-lg bg-gray-50 mx-auto">
+       <div>
+        <img class="p-5 pl-11 mx-auto" src="./images/tea-2.png" alt="">
+       </div>
+       <div class="text-center">
+        <h1 class="text-2xl font-bold pb-2">Lemon Tea</h1>
+        <p class="text-gray-600 px-4">Creamer could be replaced <br> by fresh milk</p>
+       </div></div>
+        <!-- tea-3 -->
+       <div class="rounded-lg shadow-lg bg-gray-50 mx-auto">
+       <div>
+        <img class="p-5 pl-11 mx-auto" src="./images/tea-3.png" alt="">
+       </div>
+       <div class="text-center">
+        <h1 class="text-2xl font-bold pb-2">Black Tea</h1>
+        <p class="text-gray-600 px-4">Creamer could be replaced <br> by fresh milk</p>
+       </div></div>
+        <!-- tea-4 -->
+       <div class="rounded-lg shadow-lg bg-gray-50 mx-auto">
+       <div>
+        <img class="p-5 pl-11 mx-auto" src="./images/tea-4.png" alt="">
+       </div>
+       <div class="text-center">
+        <h1 class="text-2xl font-bold pb-2">Greem Tea</h1>
+        <p class="text-gray-600 px-4">Creamer could be replaced <br> by fresh milk</p>
+       </div></div>
+      </div>
+    </section>
+  </main> 
 </body>
 </html>
